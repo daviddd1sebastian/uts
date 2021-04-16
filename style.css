@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+li{
+    list-style: none;
+}
+li:hover{
+    background-color: rgba(194, 14, 14, 0.5);
+}
+
+header{
+    background-color: #faf5f5;
+    color: #0e0c0c;
+    height: 100px;
+    
+}
+
+.header-logo{
+    float: left;
+    font-size: 32px;
+    padding: 30px 60px;
+    
+}
+
+.header-nav li{
+    float: right;
+    padding: 30px 20px;
+   
+}
+
+main{
+    padding: 90px 70px;
+
+}
+
+.main-containeer h1{
+    font-size: 85px;
+}
+
+
+
+.main-containeer span{
+    color: #5c0bf3;
+}
+.main-containeer h2{
+    position: relative;
+    color: rgb(53, 16, 83);
+    font-size: 40px;
+    animation: gerak 2s infinite;
+}
+
+@keyframes gerak {
+    from{top : 0px;}
+    to{top : 10px;}
+}
+
+.contents{
+    height: 550px;
+    margin-top: 150px;
+   
+}
+    
+.section-title{
+    padding-top: 40px;
+    border-bottom : 20px solid #f30a0a;
+    color: #0a0606;
+    font-size: 35px;
+    margin-top: 180px;
+    margin-bottom: 50px;
+}
+
+.contents-item {
+    float: left;
+    margin-right: 40px;
+}
+
+.contents-image {
+    width: 200x;
+    height: 200px;
+    padding: 20px;
+    background-color: #0a0a0a;
+    align-items: center;
+}
+
+.contents-image.white{
+    background-color: #f1f1ef;
+}
+
+.contents-image.orange{
+    background-color: rgb(245, 248, 245);
+}
+
+
+.contents-image img{
+    width: 200px;
+    align-items: center;
+}
+
+.contents-item p{
+    font-size: 24px;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.contact{
+    padding-top: 100px ;
+}
+
+input, textarea{
+    width: 450px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 20px;
+    font-size: 20px;
+    border: 1px solid #cecece;
+}
+
+.contact-submit{
+    background-color: #080a08;
+    height: 30px;
+    width: 250px;
+    font-size: 20px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.txt-red{
+    color: rgb(8, 8, 8);
+    position: relative;
+    font-size: 16px;
+    
+}
+
+footer{
+    background: #f6f4fd;
+    color: #0a0909;
+    padding: 25px 45px;
+    height: 40px;
+}
+
+.footer-logo{
+    float: left;
+    font-size: 35px;
+}
+
+.footer-nav{
+    float: right;
+    
+}
+
+.footer-nav li{
+    padding: 20px 30px;
+    float: left;
+}

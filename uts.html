@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> GUDANG MOTOR ID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            GUDANG MOTOR ID
+        </div>
+        <div class="header-nav">
+            <ul>
+                <li>Tentang</li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <div class="main-containeer">
+            <h1>HALO RIDERS SELURUH INDONESIA</span></h1>
+            <h2>Cari Moge Impianmu di Gudang Motor ID</h2>
+        </div>
+        <div class="contents">
+            <h3 class="section-title">MOGE 1000 CC</h3>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="r1.jfif" alt="Yamaha r1">
+                </div>
+                <p>YAMAHA R1</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image orange">
+                    <img src="v4r.jfif" alt="Ducati Panigale v4r">
+                </div>
+                <p>DUCATI PANIGALE V4R</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="zx10r.jfif" alt="Kawasaki zx10r">  
+                </div>
+                <p>KAWASAKI ZX10R</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="cbr1000rr.jfif" alt="Honda cbr1000rr">
+                    
+                </div>
+                <p>HONDA CBR1000RR</p>
+            </div>
+            
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="rsv4.jfif" alt="Aprilia rsv4">
+                </div>
+                <p>APRILIA RSV4</p>
+            </div>
+
+            <div class="contents-item">
+                <div class="contents-image white">
+                    <img src="h2.jfif" alt="Kawasaki H2">
+                </div>
+                <p>KAWASAKI H2</p>
+            </div>
+        </div>
+
+        <div class="contact">
+            <h3 class="section-title">Untuk info yang lebih lanjut </h3>
+            <form onsubmit=" keepmassage()">
+                <p>Nama *</p>
+                <input type="text" name="Nama" id="nama" placeholder="Masukkan Nama Anda">
+                <p>Nomor Whatsapp yang aktif *</p>
+                <input type="number" name="" id="WA" placeholder="Masukkan No.WA anda">
+                <p class="txt-red">* Kolom wajib diisi</p>
+                <input type="text" name="" id="pesan" placeholder="Masukkan Pesan Anda">
+                <button type="submit" class="Kirim">Kirim</button>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div class = "footer-logo">GUDANG MOTOR</div>
+        <div class = "footer-nav">
+            <ul>
+                <li>Tentang Kami</li>
+                <li>Hubungi Kami</li>
+            </ul>
+        </div>
+    </footer>
+    
+    <script>
+        let simpan=[];
+        const keepmassage = () =>{
+            let nama = document.getElementById("nama").value;
+            let telepon = document.getElementById("WA").value;
+            let pesan = document.getElementById("pesan").value;
+
+            let user = {nama: nama,telepon:telepon,pesan: pesan};
+            let sendPesan = localStorage.getItem("pesan");
+
+            if(sendPesan != null){
+                simpan = JSON.parse(sendPesan);
+            }
+            simpan.push(user);
+            localStorage.setItem("pesan", JSON.stringify(simpan));
+        }
+    </script>
+</body>
+</html>
